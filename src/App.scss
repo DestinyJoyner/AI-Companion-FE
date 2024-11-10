@@ -1,0 +1,30 @@
+.App {
+   width: 80%;
+    display:grid;
+    justify-items:center;
+    row-gap:2vh;
+    & img {
+        height: 200px;
+    }
+
+    &_input {
+        display:grid;
+        justify-items: center;
+        row-gap: 1vh;
+
+        & button {
+            background-color: #86C459;
+            color: white;
+            font-size:20px;
+            padding:10px;
+        }
+    }
+
+    &_response {
+        background-color: white;
+        padding: 1vw;
+        width: 60vw;
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+}

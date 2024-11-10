@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ReactMarkdown from 'react-markdown'
+import simsHeader from "./assets/sims2-header.png"
 import "./App.scss";
 
 function App() {
@@ -30,16 +31,20 @@ function App() {
   return (
     <div className="App">
       <h1>AI Companion</h1>
-      <input
-        type="text"
+      <img src={simsHeader} alt="sims2-logo" />
+      <div className="App_input">
+      <textarea
         value={prompt}
-        onChange={(e) => setPrompt(e.target.value)} // Update prompt state on input change
+        onChange={(e) => setPrompt(e.target.value)}
         placeholder="Enter your prompt here"
+        rows="5"
+        cols="60"
       />
       <button onClick={submitRequest}>Submit</button>{" "}
-      {/* Button to submit the request */}
+      </div>
+      
       {geminiResponse && (
-        <div>
+        <div className="App_response">
           <h2>Response:</h2>
           <ReactMarkdown>{geminiResponse}</ReactMarkdown>
         </div>
