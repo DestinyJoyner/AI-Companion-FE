@@ -13,11 +13,14 @@ LearnNation is assembling a specialized AI development team to lead our next gen
 4. **Product Prototyping**: Your assistant will serve as a prototype for LearnNation's expansion into AI-enhanced learning experiences. The most successful implementations may be selected for further development and integration into our core product offerings, with the original developers taking lead roles in those initiatives.
 
 ## Key Features
+## Backend Repository
+You can find the backend repository [here](https://github.com/DestinyJoyner/AI-Companion-BE).
 ### Backend
 - **Flask Framework**: The backend is built using Flask, a lightweight WSGI web application framework.
 - **CORS Support**: Flask-CORS is implemented to allow cross-origin requests, enabling the frontend to communicate with the backend seamlessly.
 - **Environment Variables**: The application uses a `.env` file to securely manage API keys and other sensitive information.
 - **Gemini API Integration**: The backend connects to the Gemini API to provide AI-generated responses based on user prompts.
+
 
 ### Frontend
 - **React Framework**: The frontend is built using React, providing a dynamic and responsive user interface.
