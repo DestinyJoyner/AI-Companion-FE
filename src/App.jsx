@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import ReactMarkdown from 'react-markdown'
 import "./App.scss";
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
       {geminiResponse && (
         <div>
           <h2>Response:</h2>
-          <p>{geminiResponse}</p>
+          <ReactMarkdown>{geminiResponse}</ReactMarkdown>
         </div>
       )}
     </div>
